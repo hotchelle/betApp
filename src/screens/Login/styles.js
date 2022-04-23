@@ -6,10 +6,25 @@ const styles = StyleSheet.create(
         container:
         {
             flex: 1,
+            backgroundColor: '#001F3F',
         },
         topContainer:
         {
-            marginTop: 300,
+            marginTop: 100,
+            alignItems: 'center'
+
+        },
+        anyContainer:
+        {
+            flex: 2,
+            alignItems: 'center',
+            marginTop: 150,
+            
+
+        },
+        sepContainer:
+        {
+            flex: 2,
             alignItems: 'center'
 
         },
@@ -31,31 +46,35 @@ const styles = StyleSheet.create(
         },
         textinput:
         {
+            flex: 2,
             color: COLORFONTS.white,
             fontSize: SIZEFONTS.h3,
             borderBottomColor: COLORFONTS.lightgrey,
             borderBottomWidth: 1,
-            paddingVertical: 15,
-            marginHorizontal: 15,
-            marginVertical: 5,
+            paddingVertical: 1,
+            marginHorizontal: 100,
+            marginVertical: 2,
 
         },
         buttonContainer:
         {
             marginTop: 50
+            
         },
         firstButton:
         {
-            backgroundColor: COLORFONTS.secondary,
+            backgroundColor: '#2E8B57',
             padding: 20,
-            marginHorizontal: 30,
-            borderRadius: 10,
+            marginHorizontal: 70,
+            borderRadius: 30,
             justifyContent: 'center',
             alignItems: 'center',
-            marginVertical: 10,
+            marginVertical: 1,
         },
         buttonText:
         {
+            marginTop: 10,
+            flex: 2,
             color: COLORFONTS.white,
             fontWeight: 'bold',
             fontSize: SIZEFONTS.h4,

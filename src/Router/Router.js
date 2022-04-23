@@ -38,81 +38,10 @@ const homenav = createStackNavigator(
             screen: HomeScreen
 
         },   
-    },
-
-    {
-        defaultNavigationOptions:
-        {
-            headerTitle: 'Sweet',
-            headerStyle:
-            {
-                backgroundColor: COLORFONTS.primary
-            },
-            headerTitleStyle:
-            {
-                color: COLORFONTS.white,
-                fontWeight: '800',
-            }
-        }
     }
+
 )
 
-const tabNavigator = createBottomTabNavigator({
-
-
-    store:
-    {
-        screen: myStorePage,
-        navigationOptions:
-        {
-            tabBarLabel: 'MyStore',
-            tabBarIcon:({tintColor,focused}) => <Icon name='view-dashboard-outline' size={focused ? 30: 20} color={COLORFONTS.primary}/>
-        }
-    },
-    home:
-    {
-        screen: homenav,
-        navigationOptions:
-        {
-            tabBarLabel: 'Home',
-            tabBarIcon:({tintColor,focused}) => <Icon name='home-outline' size={focused ? 30: 20} color={COLORFONTS.primary}/>
-        }
-
-    },
-    account:
-    {
-        screen: accountSettings,
-        navigationOptions:
-        {
-            tabBarLabel: 'Account',
-            tabBarIcon:({tintColor,focused}) => <Icon name='account-outline' size={focused ? 30: 20} color={COLORFONTS.primary}/>
-        },
-       
-    },
-
-    
-
-},{
-    initialRouteName: 'home',
-    
-    tabBarOptions: 
-    {
-        activeTintColor: COLORFONTS.primary,
-        inactiveTintColor: COLORFONTS.grey,
-
-        labelStyle:
-        {
-            fontWeight: 'bold',
-
-        },
-        tabStyle:
-        {
-            paddingTop: 5,
-            height: 60
-        }
-    }
-
-}) 
 
 const stack = createSwitchNavigator(
     {
@@ -126,7 +55,7 @@ const stack = createSwitchNavigator(
         },
         stack:
         {
-            screen: tabNavigator,
+            screen: homenav,
         }
 
     }
