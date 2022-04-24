@@ -10,6 +10,7 @@ import myStorePage from '../screens/MyStorePage'
 import HomeScreen from '../screens/Home'
 import { COLORFONTS } from '../../Constants/theme'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import Admin from '../screens/Admin'
 
 const auth = createStackNavigator(
     {
@@ -20,6 +21,14 @@ const auth = createStackNavigator(
                 headerShown: false,
             }
         },
+        admin:
+        {
+            screen: Admin,
+            navigationOptions:
+            {
+                headerShown: false,
+            }
+        }
     }
 
 );

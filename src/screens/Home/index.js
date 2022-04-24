@@ -15,7 +15,7 @@ const HomeScreen = ({ navigation }) => {
             <Text style={styles.title}>Update Funds</Text>
           
           <View style={styles.dataContainer}>
-            <TextInput style={styles.textinput} placeholderTextColor = {COLORFONTS.white} />
+            <TextInput placeholder='Enter value' style={styles.textinput} placeholderTextColor = {COLORFONTS.white} />
           </View>
 
           </View>

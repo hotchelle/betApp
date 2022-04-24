@@ -28,6 +28,15 @@ const LoginPage = ({ navigation }) => {
             </TouchableOpacity>
 
           </View>
+
+          <View style={styles.buttonContainer2}>
+            <TouchableOpacity onPress={() => navigation.navigate('admin')}>
+              <View style={styles.firstButton}>
+                <Text style={styles.buttonText}>Admin</Text>
+              </View>
+            </TouchableOpacity>
+
+          </View>
           
         </ScrollView>
     </View>

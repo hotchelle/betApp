@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import { COLORFONTS, SIZEFONTS } from "../../../Constants/theme";
 
+
 const styles = StyleSheet.create(
     {
         container:
@@ -32,7 +33,7 @@ const styles = StyleSheet.create(
         {
             color: COLORFONTS.white,
             fontSize: SIZEFONTS.h1 *1.5,
-            fontWeight: 'bold'
+            fontWeight: 'bold',
         },
         subTitle:
         {
@@ -58,7 +59,13 @@ const styles = StyleSheet.create(
         },
         buttonContainer:
         {
-            marginTop: 50
+            marginTop: 50,
+            marginVertical: 250
+            
+        },
+        buttonContainer1:
+        {
+            marginTop: 60
             
         },
         firstButton:
