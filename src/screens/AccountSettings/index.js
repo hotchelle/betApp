@@ -97,7 +97,10 @@ const accountSettings = ({ navigation }) => {
     }}> B </Text>
   </TouchableHighlight>
 
-
+  </View>
+  <View style = {{
+    alignSelf: 'center'
+  }}>
   <TouchableHighlight
       style = {{
       borderRadius: Math.round(Dimensions.get('window').width + Dimensions.get('window').height) / 5,
@@ -116,29 +119,13 @@ const accountSettings = ({ navigation }) => {
 
     }}> C </Text>
   </TouchableHighlight>
+  </View>
 
 
-  <TouchableHighlight
-      style = {{
-      borderRadius: Math.round(Dimensions.get('window').width + Dimensions.get('window').height) / 5,
-      width: Dimensions.get('window').width * 0.3,
-      height: Dimensions.get('window').width * 0.3,
-      backgroundColor:'#9F6AD3',
-      justifyContent: 'center',
-      alignItems: 'center',
-      margin: 40,
-      
-    }}
-    underlayColor = '#ccc'
-    onPress = { () => alert('Bet Placed!') }
-  >
-    <Text style={{
-
-    }}> D </Text>
-  </TouchableHighlight>
+  
 
       
-    </View>
+ 
 
 
     </View>
