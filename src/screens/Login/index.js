@@ -28,6 +28,7 @@ const LoginPage = ({ navigation }) => {
             </TouchableOpacity>
 
           </View>
+          
         </ScrollView>
     </View>
   )

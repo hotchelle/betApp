@@ -9,24 +9,38 @@ const HomeScreen = ({ navigation }) => {
     <View style={styles.container}>
 
         <ScrollView>
-          <View style={styles.topContainer}>
-            <Text style={styles.title}>*My Ace Bet*</Text>
-          </View>
-          
-          <View style={styles.anyContainer}>
-            <Text style={styles.title}>Enter  Pin</Text>
-          </View>
 
-          <View style={styles.dataContainer}>
-            <TextInput style={styles.textinput} placeholderTextColor={COLORFONTS.white} />
-          </View>
           <View style={styles.buttonContainer}>
-            <TouchableOpacity onPress={() => navigation.navigate('Bid')}>
+          
+          <TouchableOpacity onPress={() => navigation.navigate('Bid')}>
               <View style={styles.firstButton}>
-                <Text style={styles.buttonText}>Ace</Text>
+                <Text style={styles.buttonText}>Update Bids</Text>
+              </View>
+            </TouchableOpacity>
+            
+            <TouchableOpacity onPress={() => navigation.navigate('Bid')}>
+              <View style={styles.secondButton}>
+                <Text style={styles.buttonText2}>A</Text>
+              </View>
+
+              <TouchableOpacity onPress={() => navigation.navigate('Bid')}>
+              <View style={styles.secondButton}>
+                <Text style={styles.buttonText2}>B</Text>
               </View>
             </TouchableOpacity>
 
+            <TouchableOpacity onPress={() => navigation.navigate('Bid')}>
+              <View style={styles.secondButton}>
+                <Text style={styles.buttonText2}>C</Text>
+              </View>
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => navigation.navigate('Bid')}>
+              <View style={styles.firstButton}>
+                <Text style={styles.buttonText}>Set Timer</Text>
+              </View>
+            </TouchableOpacity>
+            </TouchableOpacity>
           </View>
         </ScrollView>
     </View>
