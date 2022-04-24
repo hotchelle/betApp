@@ -20,13 +20,6 @@ const auth = createStackNavigator(
                 headerShown: false,
             }
         },
-        SignUp:
-        {
-            screen: Register,
-            navigationOptions: {
-                headerShown: false,
-            }
-        }
     }
 
 );
@@ -35,9 +28,17 @@ const homenav = createStackNavigator(
     {
         home:
         {
-            screen: HomeScreen
+            screen: HomeScreen,
+            navigationOptions:
+            {
+                headerShown: false,
+            }
 
-        },   
+        },
+        Bid:
+        {
+            screen: accountSettings
+        }
     }
 
 )
@@ -56,6 +57,10 @@ const stack = createSwitchNavigator(
         stack:
         {
             screen: homenav,
+            navigationOptions:
+            {
+                headerShown: false,
+            }
         }
 
     }
