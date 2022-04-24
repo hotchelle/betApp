@@ -10,7 +10,7 @@ const styles = StyleSheet.create(
         },
         topContainer:
         {   
-            flex: 1,
+            flex: 2,
             marginBottom: 100,
             alignItems: 'center'
 
@@ -21,6 +21,7 @@ const styles = StyleSheet.create(
             alignItems: 'center',
             marginTop: 150,
             
+
         },
         title:
         {

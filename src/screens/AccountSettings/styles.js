@@ -9,8 +9,9 @@ const styles = StyleSheet.create(
             backgroundColor: '#001F3F',
         },
         topContainer:
-        {
-            marginTop: 100,
+        {   
+            flex: 1,
+            marginBottom: 100,
             alignItems: 'center'
 
         },
@@ -20,13 +21,6 @@ const styles = StyleSheet.create(
             alignItems: 'center',
             marginTop: 150,
             
-
-        },
-        sepContainer:
-        {
-            flex: 2,
-            alignItems: 'center'
-
         },
         title:
         {
@@ -50,10 +44,10 @@ const styles = StyleSheet.create(
             color: COLORFONTS.white,
             fontSize: SIZEFONTS.h3,
             borderBottomColor: COLORFONTS.lightgrey,
-            borderBottomWidth: 1,
-            paddingVertical: 1,
-            marginHorizontal: 100,
-            marginVertical: 2,
+            borderBottomWidth: 2,
+            paddingVertical: 10,
+            marginHorizontal: 1,
+            marginVertical: 6,
 
         },
         buttonContainer:
@@ -69,7 +63,28 @@ const styles = StyleSheet.create(
             borderRadius: 30,
             justifyContent: 'center',
             alignItems: 'center',
-            marginVertical: 1,
+            marginVertical: 60,
+        },
+
+        secondButton:
+        {
+            backgroundColor: '#EEC643',
+            padding: 20,
+            marginHorizontal: 70,
+            borderRadius: 30,
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginVertical: 40,
+        },
+
+
+        buttonText2:
+        {
+            marginTop: 10,
+            flex: 2,
+            color: '#85144B',
+            fontWeight: 'bold',
+            fontSize: SIZEFONTS.h4,
         },
         buttonText:
         {
@@ -78,7 +93,7 @@ const styles = StyleSheet.create(
             color: COLORFONTS.white,
             fontWeight: 'bold',
             fontSize: SIZEFONTS.h4,
-        },
+        }
     }
 );
 
