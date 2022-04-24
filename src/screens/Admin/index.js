@@ -37,7 +37,7 @@ const Admin = ({ navigation }) => {
 
             <TouchableOpacity>
               <View style={styles.firstButton}>
-                <TextInput style={styles.buttonText}>Update Bids</TextInput>
+                <TextInput style={styles.buttonText}>Set Timer</TextInput>
               </View>
             </TouchableOpacity>
             </TouchableOpacity>
